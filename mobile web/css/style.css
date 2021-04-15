@@ -1,0 +1,564 @@
+section.banner {
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -3; 
+    text-align: right; /* bootstrap حتى يتناسب مع النسخة الحديثة من */
+  }
+  /* إضافة اللون الأحمر بشفافية 80% على الطبقة التي تلي الصورة */
+section.banner .overlay {
+    background-color: rgba(239, 71, 58, 0.8);
+    position: relative;
+    z-index: 1; 
+  }
+  /* إنزال صورة الجوال إلى الأسفل قليلًا */
+section.banner .overlay {
+  position: relative; 
+}
+section.banner .overlay .images {
+  position: absolute;
+  bottom: -145px;
+  right: 0;
+  z-index: -1; 
+}
+section.banner .overlay .images img {
+  max-width: 100%; 
+}
+/* ضبط الهامش الخاص بصورة أيقونة المطعم */
+section.banner .overlay .app-icon img {
+  margin-top: 120px;
+  margin-bottom: 50px; 
+}
+/* h1 تنسيقات الخط وضبط الهامش في العنوان */
+section.banner .overlay .banner-text h1 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 40px; 
+}
+/* تنسيقات الخط في الفقرة النصية */
+section.banner .overlay .banner-text p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-bottom: 40px; 
+}
+/* تنسيقات لون الأزرار والمسافات الخاصة به */
+section.banner .overlay .banner-text button {
+  line-height: 40px;
+  margin: 40px 3px;
+  background-color: #fafafa; 
+}
+/* تنسيق أيقونة متجر جوجل وأبل */
+section.banner .overlay .banner-text button img {
+  width: 50px; 
+}
+section.banner .overlay .banner-text button i {
+  font-size: 50px; 
+}
+/* تنسيق النص داخل الزر */
+section.banner .overlay .banner-text button p {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 25px;
+  color: #232323; 
+}
+/* تنسيق الخط الثخين داخل الزر */
+section.banner .overlay .banner-text button p span {
+  font-size: 18px; 
+}
+/* ضبط الهامش الخاص بالزر الأخير */
+section.banner .overlay .banner-text button:last-child {
+  margin-right: 20px; 
+} 
+
+@media (max-width: 767px) and (min-width: 276px) {
+
+/* تحريك صورة الهاتف المحمول إلى الأسفل وإلى اليمين لتظهر في منتصف السطر */
+section.banner .overlay .images {
+    bottom: -500px;
+    right: 20%; 
+}
+/* ضبط الهامش الخاص بأيقونات المطعم */
+section.banner .overlay .app-icon img {
+    margin-top: 50px;
+    margin-bottom: 30px; 
+    margin-right:92px ;
+}
+/* ضبط الهامش الخاص بالفقرة النصية بجانب الأيقونات */
+section.banner .overlay .banner-text {
+    margin-bottom: 350px; 
+}
+/* ضبط حاشية وهامش الأزرار */
+section.banner .overlay .banner-text button {
+    line-height: 40px;
+    margin: 0px 0 50px;
+    padding: .5rem 1rem;
+}
+/* إنقاص حجم أيقونة متجر جوجل وأبل */
+section.banner .overlay .banner-text button img {
+    width: 40px; 
+}
+section.banner .overlay .banner-text button i {
+    font-size: 40px; 
+}
+/* تصغير حجم الخط داخل الزر */
+section.banner .overlay .banner-text button p {
+    font-size: 12px;
+    line-height: 18px; 
+}
+section.banner .overlay .banner-text button p span {
+    font-size: 16px; 
+  
+}
+ html,body{
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    overflow-x: hidden;
+  }
+  
+  
+  section.option .images{
+    bottom: -400px;
+  }
+  section.option .options{
+    margin-bottom: 600px;
+  }
+  section.feature .features .media span .media-body p {
+    margin-left: 0px !important;
+    margin-bottom: 35px !important;
+    }
+    section.feature .features .media span i{
+      margin-left: 50px !important;
+      padding-left: 0;
+      padding-right: 0px;
+      margin-top: -60px;
+      margin-right: -33px;
+    }
+    section.banner .overlay .banner-text button:last-child {
+      margin-right: 0px;
+  }
+  section.slider {
+    background-color: #ffffff;
+    padding: 75px 0 100px;
+}
+  section.slider .carousel-control-next, section.slider .carousel-control-prev {
+  width: 40px!important;
+  height: 40px !important;
+  margin-top: 20px !important;
+  
+}
+.ml-3{
+  width: 55px;
+  }
+  section.option .options .media h5 {
+    font-size: 15px!important;
+    line-height: 25px!important;
+  }
+  section.option .options .media p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+}
+/* التنسيقات المطبقة على عناصر الصفحة في الشاشات التي عرضها أصغر من 575 بكسل */
+@media (max-width: 575px) {
+   section.banner .overlay .images {
+       bottom: -115px;
+       right: 23%;
+       left: 5%;
+   }
+
+   section.banner .overlay .banner-text {
+       margin-bottom: 350px;
+       text-align: center;
+   }
+   section.banner .overlay .images img {
+    max-width: 100%; 
+    width:165px;
+  }
+  section.feature .features .media span{
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+  }
+  
+  section.feature .features .media span .media-body p{
+    margin-left: 0px;
+  }
+
+}
+ 
+@media(max-width: 284px){
+  html,body{
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    overflow-x: hidden;
+  }
+  section.banner .overlay .images {
+    bottom: -120px;
+    right: 20%;
+    left: 5%;
+}
+  section.banner .overlay .app-icon img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 65px;
+  }
+  section.banner .overlay .images img{
+    visibility: visible;
+    width:170px;
+    
+  }
+
+  section.banner .overlay .banner-text button:last-child {
+    margin-right: 0px;
+  }
+  section.option .images{
+    bottom: -400px;
+  }
+  section.option .options{
+    margin-bottom: 600px;
+  }
+  section.feature .features .media span{
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 22px;
+  }
+  
+  .ml-3{
+  width: 50px;
+  }
+  section.option .options .media h5 {
+    font-size: 15px!important;
+    line-height: 25px!important;
+  }
+  section.option .options .media p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+
+}
+
+/* تحديد لون خلفية القسم أبيض وضبط الحاشية */
+section.feature {
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: right; /* bootstrap حتى يتناسب مع النسخة الحديثة من */
+}
+/* ضبط الهامش الخاص بصورة الجوال */
+section.feature .features {
+  margin-top: 90px;
+}
+/* ضبط الهامش الخاص بصنف المزايا */
+section.feature .features .media {
+  margin-bottom: 70px;
+}
+section.feature .features .media span .media-body{
+  padding-top: 0;
+  margin-bottom: 0px;
+  margin-top: -66px;
+}
+section.feature .features .media span .media-body p{
+  margin-left: 72px;
+}
+/* تنسيقات الكتلة النصية في العنوان */
+section.feature .features .media-body h5 {
+  font-size: 24px;
+  color: #080808;
+  margin-bottom: 12px;
+}
+/* تنسيق الفقرة النصية داخل البطاقات وجعلها غير مرئية */
+section.feature .features .media-body p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #757474;
+}
+/* التي تظهر أسفل صورة الجوال Font-Awesome تنسيقات ايقونة الخط */
+section.feature .features i {
+  color: #fff;
+  background-color: #ef473a;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 2px;
+  text-align: center;
+  display: block !important;
+}
+/* ضبط حجم وهامش صورة الجوال */
+section.feature .mobile-img img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+/* التنسيقات المطبقة على القسم الخاص بالمزايا */
+section.option {
+  padding: 120px 0 0;
+  background-color: #f8f8f8;
+  z-index: -2;
+  position: relative;
+  text-align: right;/* bootstrap حتى تتناسب مع النسخة الحديثة من */
+}
+/* إزاحة صورة الجوال للأسفل */
+section.option .images {
+  position: absolute;
+  bottom: -150px;
+  z-index: -1;
+}
+/* ضبط الهامش العلوي ومن اليمين لقسم المزايا */
+section.option .options {
+  margin-top: 40px;
+  margin-right: 40px;
+}
+/* تعيين مسافة بين الفقرات النصية من خلال ضبط الهامش */
+section.option .options .media {
+  margin-bottom: 60px;
+}
+/* تنسيقات العنوان ضمن الفقرات النصية */
+section.option .options .media h5 {
+  font-size: 24px;
+  line-height: 40px;
+  color: #141414;
+}
+/* تنسيقات الخط في الفقرة النصية */
+section.option .options .media p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #757474;
+}
+/* ضبط الحاشية ولون الخلفية لعارض الشرائح */
+section.slider {
+  background-color: #ffffff;
+  padding: 120px 0 110px; 
+}
+/* التنسيقات المطبقة على العنوان في عارض الشرائح */
+section.slider .title {
+  margin-bottom: 60px; 
+}
+section.slider .title h3 {
+  font-size: 30px; 
+}
+/* توسيط معرض الصور أفقيا وتحديد عرضه بـ 60% من عرض الصفحة */
+section.slider .carousel-inner {
+  width: 60%;
+  margin: 0 auto; 
+}
+/* تنسيق موضع نقاط التنقل وخصائصها */
+section.slider .carousel-indicators {
+  bottom: -60px;
+  padding: 0; 
+}
+section.slider .carousel-indicators li {
+  max-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ef473a;
+}
+/* تغير لون خلفية النقطة الفعالة */
+section.slider .carousel-indicators li.active {
+  background-color: #ef473a; 
+}
+/* تنسيقات أسهم التنقل */
+section.slider .carousel-control-next,
+section.slider .carousel-control-prev {
+  width: 70px;
+  height: 70px;
+  color: #ef473a;
+  border-radius: 50%;
+  border: 1px solid #ef473a;
+  margin-top: 130px;
+  opacity: 1; 
+}
+section.faq {
+  background-image: url("../images/bg-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
+  text-align: right; /*bootstrap حتى تتناسب مع النسخة الحديثة من*/
+}
+/* إضافة طبقة سوداء أمام الصورة وضبط الحاشية الخاصة بها */
+section.faq .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 120px 0 80px; 
+}
+/* تنسيقات العنوان الرئيسي */
+section.faq .overlay .title {
+  margin-bottom: 60px; 
+}
+section.faq .overlay .title h3 {
+  font-size: 30px;
+  color: #ffffff; 
+}
+section.faq .overlay .card {
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0px;
+  border-radius: 0px; 
+}
+/* بوضعها Bootstrap إزالة اللون من عنوان الصفحة التي قام إطار العمل */
+section.faq .overlay .card .card-header {
+  background-color: transparent;
+  border-bottom: 0px; 
+}
+/* التنسيقات المطبقة على الخط في العنوان */
+section.faq .overlay .card .card-header h5 a {
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  
+}
+/* تغير موضع السهم الموجود في البطاقات */
+section.faq .overlay .card .card-header h5 a i{
+ position: absolute;
+ top: 2px;
+ left: 5px; 
+}
+/* التنسيقات المطبقة على الفقرة النصية داخل جسم البطاقة */
+section.faq .overlay .card .card-block {
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 1.25rem 1.25rem;
+  color: #c9c9c9; 
+}
+/* تغير مؤشر السهم إلى الأعلى */
+section.faq .overlay .card .card-header h5 a.collapsed[aria-expanded="false"] i:before {
+  content: "\f107"; 
+}
+/* تعيين لون الخلفية لقسم تذييل الصفحة */
+footer {
+  background-color: #232323;
+  text-align: right;/* bootstrap حتى يتناسب مع النسخة الحديثة من */
+}
+/* التنسيقات المطبقة على الخط في العنوان */
+footer .footer .widget .title h4 {
+  font-size: 24px;
+  line-height: 80px;
+  color: #ffffff; 
+}
+/* إضافة الإطار السفلي للنص وضبط الهامش الخاص به */
+footer .footer .widget .title {
+  border-bottom: 2px solid #2b2b2b;
+  margin-bottom: 35px; 
+  position: relative;
+}
+/* إضافة الإطار السفلي ذو اللون الأرجواني وتطبيق التنسيقات الخاصة به */
+footer .footer .widget .title::after {
+   content: "";
+   position: absolute;
+   bottom: -2px;
+   right: 0;
+   display: inline-block;
+   width: 90px;
+   height: 2px;
+   background-color: #ef473a; 
+}
+footer .footer .widget .content p {
+  font-size: 18px;
+  line-height: 40px;
+  color: #757474; 
+}
+/* التنسيقات المطبقة على أيقونات التواصل الاجتماعي */
+footer .footer .widget .content ul.social-links li a {
+   width: 50px;
+   height: 50px;
+   display: block;
+   border-radius: 50%;
+   background-color: #353638;
+   color: #fff;
+   text-align: center;
+   line-height: 50px;
+}
+/* تبديل لون الأزرار عند مرور مؤشر الفأرة فوق أيقونات التواصل الاجتماعي */
+footer .footer .widget .content ul.social-links li a:hover {
+   background-color: #ef473a;
+}
+/* إضافة مسافة تفصل بين الأيقونات والفقرة النصية في الأعلى من خلال ضبط الهامش والحاشية */
+footer .footer .widget .content ul.social-links {
+   padding: 0px;
+   margin-top: 95px;
+}
+/* إضافة مسافة تفصل بين الأيقونات من خلال ضبط الهامش الخاص بالأيقونات */
+footer .footer .widget .content ul.social-links li {
+   margin-right: 8px;
+}
+/* إزالة الحاشية التلقائية التي يتم إضافتها إلى القائمة تلقائيًا */
+footer .footer .widget .content ul.twittes {
+  padding: 0;
+}
+/* التنسيقات الخاصة بعناصر القائمة */
+footer .footer .widget .content ul.twittes li {
+font-size: 15px;
+line-height: 24px;
+text-indent: 20px;
+color: #757474;
+position: relative;
+padding-bottom: 20px;
+padding-right: 5px;
+margin-bottom: 20px;
+border-bottom: 2px solid #2b2b2b;
+}
+/* إضافة أيقونة تويتر وضبط التنسيقات المطلوبة لها */
+footer .footer .widget .content ul.twittes li::before {
+content: "\f099";
+position: absolute;
+top: 5px;
+right: -15px;
+font-family: fontAwesome;
+line-height: 1em;
+color: #ef473a; 
+}
+/* إزالة الإطار السفلي عن العنصر الأخير في القائمة */
+footer .footer .widget .content ul.twittes li:last-of-type {
+margin-bottom: 0px;
+border-bottom: 0px;
+}
+/* التنسيقات المطبقة على حقل الإدخال في نموذج الإرسال */
+footer .footer .widget .content form input {
+  font-size: 14px;
+  line-height: 25px;
+  background-color: #2c2b2b;
+  border-radius: 0;
+  color: #ffffff;
+  border-color: transparent;
+  font-family: ar-font;
+  margin-bottom: 15px; 
+}
+/* التنسيقات الخاصة بزر الإرسال */
+footer .footer .widget .content form button {
+  font-size: 14px;
+  line-height: 25px;
+  border-radius: 0;
+  background-color: #ef473a;
+  color: #ffffff;
+  border-color: transparent;
+  font-family: ar-font;
+  margin-bottom: 15px; 
+}
+/* التنسيقات الخاصة بزر الإرسال */
+footer .footer .widget .content form button {
+  font-size: 14px;
+  line-height: 25px;
+  border-radius: 0;
+  background-color: #ef473a;
+  color: #ffffff;
+  border-color: transparent;
+  font-family: ar-font;
+  margin-bottom: 15px; 
+}
+/* إضافة إطار أسفل الصفحة باللون المحدد */
+footer .copyright {
+  border-top: 2px solid #2b2b2b; 
+}
+/* "تنسيقات الخط للفقرة النصية "جميع الحقوق محفوظة */
+footer .copyright p {
+  font-size: 15px;
+  line-height: 70px;
+  color: #565656; 
+}
