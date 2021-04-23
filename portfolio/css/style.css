@@ -2,8 +2,9 @@ header {
   background-image: url(../images/bg.jpg);
   background-position: center center;
   background-size: cover;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
+
 /* التنسيقات المطبقة على الطبقة الزرقاء التي تلي الخلفية ونقلها للأسفل */
 header .MainCard {
   background-color: rgba(5, 117, 230, 0.8);
@@ -11,38 +12,43 @@ header .MainCard {
   padding: 3% 10%;
   transform: translateY(20%);
 }
+
 /* إضافة إطار للصورة وضبط الهامش الخاص بها */
 header .MainCard img {
- border: 5px solid #72ace7;
- margin-bottom: 20px;
- width: 410px;
- height: 465px;
+  border: 5px solid #72ace7;
+  margin-bottom: 20px;
+  width: 410px;
+  height: 465px;
 }
 
 /* وضبط الهامش h1 تنسيقات الخط والمسافات في العنوان */
 header .MainCard h1 {
-font-size: 36px;
-line-height: 50px;
-margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 25px;
 }
+
 /* تنسيقات الخط المطبقة على المسمى الوظيفي */
 header .MainCard h1 span {
- font-size: 24px;
+  font-size: 24px;
 }
+
 /* ضبط الهامش والحاشية الخاصة بأيقونات التواصل الاجتماعي */
 header .MainCard ul {
- padding-right: 0;
- margin-bottom: 40px; 
+  padding-right: 0;
+  margin-bottom: 40px;
 }
+
 /* التنسيقات المطبقة على أيقونات التواصل الاجتماعي */
 header .MainCard ul li {
- margin-right: 10px;
+  margin-right: 10px;
 }
 
 header .MainCard ul li a {
- color: #021b79;
- font-size: 24px;
+  color: #021b79;
+  font-size: 24px;
 }
+
 /* ضبط التنسيقات الخاصة بالعنوان الثاني في الأسفل */
 header .MainCard h2 {
   font-size: 15px;
@@ -50,6 +56,7 @@ header .MainCard h2 {
   font-weight: bold;
   margin-bottom: 15px;
 }
+
 /* ضبط التنسيقات الخاصة بالفقرة النصية في الأسفل */
 header .MainCard p {
   font-size: 15px;
@@ -57,13 +64,15 @@ header .MainCard p {
   color: #89c4ff;
   margin-bottom: 40px;
 }
+
 /* خصائص الخط المستخدمة في زر تحميل السيرة الذاتية */
-header .MainCard > a {
+header .MainCard>a {
   color: #ffffff;
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 40px;
 }
+
 /* التنسيقات المطبقة على شرائط التنقل وضبط الهامش من اليمين واليسار للقائمة */
 nav.navbar ul.navbar-nav li a.nav-link {
   color: #ffffff;
@@ -73,20 +82,26 @@ nav.navbar ul.navbar-nav li a.nav-link {
   padding-left: 1.5rem;
   transition: all 0.5s ease;
 }
+
 /* تغير لون عناصر القائمة عند مرور مؤشر الفأرة فوقه */
-nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-link.active {
+nav.navbar ul.navbar-nav li a.nav-link:hover,
+nav.navbar ul.navbar-nav li a.nav-link.active {
   color: #0575e6;
   background-color: #ffffff;
 }
+
 /* تغير لون عناصر القائمة إلى الأزرق عند النزول إلى أسفل الصفحة */
 nav.navbar.noTransparrent ul.navbar-nav li a.nav-link {
-    color: #0575e6;
+  color: #0575e6;
 }
+
 /* تغير لون عناصر القائمة عند مرور مؤشر الفأرة فوقه */
-nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover, nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link:hover,
+nav.navbar.noTransparrent ul.navbar-nav li a.nav-link.active {
   color: #ffffff;
   background-color: #0575e6;
 }
+
 /* إضافة إطار يحيط بالقائمة عند النزول إلى أسفل الصفحة */
 nav.navbar.noTransparrent {
   background-color: #ffffff;
@@ -95,58 +110,69 @@ nav.navbar.noTransparrent {
 
 /* ضبط الهامش الخاص يأيقونة القائمة */
 nav.navbar.noTransparrent button.navbar-toggler {
-  margin: 30px auto; 
+  margin: 30px auto;
 }
+
 /* تغير لون أيقونة القائمة عند الانتقال للأسفل */
 nav.navbar.noTransparrent button.navbar-toggler span {
   color: #0575e6;
 }
+
 /* التنسيقات المطبقة على عناصر القائمة في الشاشات ذات العرض الأصغر من 767 بيكسل  */
 /* bootstrap يوجد تعديلات هنا لم يضفها المدرب وذلك لأن هذه التعديلات تتناسب مع النسخ الحديثة فقط من */
 @media (max-width: 767px) {
   nav.navbar {
-      min-height: 80px;
-      text-align: right;
+    min-height: 80px;
+    text-align: right;
   }
 
   nav.navbar .container {
-      width: 100%;
-      position: relative;
-      min-height: 40px;
+    width: 100%;
+    position: relative;
+    min-height: 40px;
   }
-  nav.navbar button.navbar-toggler{
-      position: absolute;
-      left: 0;
-      top: 0;
-      margin: 0;
+
+  nav.navbar button.navbar-toggler {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
   }
-  nav.navbar button.navbar-toggler span{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+  nav.navbar button.navbar-toggler span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   nav.navbar.noTransparrent button.navbar-toggler {
-      margin: 0;
+    margin: 0;
   }
-  nav.navbar ul{
-      padding-right: 0;
+
+  nav.navbar ul {
+    padding-right: 0;
   }
 }
+
 section.licence {
   padding: 205px 0 80px;
-  background-color: #f6fbff; 
-  text-align: right; /* bootstrap حتى تتناسب مع النسخ الحديثة من */
+  background-color: #f6fbff;
+  text-align: right;
+  /* bootstrap حتى تتناسب مع النسخ الحديثة من */
 }
+
 /* تنسيقات المطبقة على الخط في العنوان */
 section.licence .title {
-  padding-bottom: 35px; 
-  Position:  relative
+  padding-bottom: 35px;
+  Position: relative
 }
+
 section.licence .title h2 {
   font-size: 30px;
   line-height: 50px;
-  color: #0575e6; 
+  color: #0575e6;
 }
+
 /* إضافة الخط الزمني تحت العنوان  */
 section.licence .title:before {
   content: "";
@@ -158,36 +184,42 @@ section.licence .title:before {
   right: 50%;
   transform: translateX(50%);
 }
+
 /* إظهار العنوان وأيقونة القبعة بسطرين مختلفين */
 section.licence .title h2 i {
   display: block;
 }
+
 section.licence ul.timeline li .time-box {
   background-color: #ffffff;
   border: 2px solid #f4f3f3;
   max-width: 48%;
-  padding: 25px 40px; 
+  padding: 25px 40px;
   position: relative;
 }
+
 /* تطبيق التنسيقات الخاصة في العنوان ضمن الصناديق الزمنية */
 section.licence ul.timeline li .time-box h4 {
   font-size: 18px;
   line-height: 30px;
-  color: #555555; 
+  color: #555555;
 }
+
 /* تنسيقات فقرة التاريخ والتي تظهر باللون الأزرق والخط باللون الأبيض */
 section.licence ul.timeline li .time-box h4 span {
   color: #ffffff;
   background: #0575e6;
   padding: 0 5px;
-  margin-left: 25px; 
+  margin-left: 25px;
 }
+
 /* تنسيقات الفقرة النصية في الصندوق الزمني  */
 section.licence ul.timeline li .time-box p {
   font-size: 15px;
   line-height: 22px;
   color: #b1b1b1;
 }
+
 /* إضافة المثلث الصغير الذي يظهر على يسار الفقرات  */
 section.licence ul.timeline li .time-box:after {
   content: "";
@@ -197,16 +229,18 @@ section.licence ul.timeline li .time-box:after {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
-  transform: rotate(45deg);    
+  transform: rotate(45deg);
   border-left: 2px solid #f4f3f3;
-  border-bottom: 2px solid #f4f3f3; 
+  border-bottom: 2px solid #f4f3f3;
 }
+
 /* إضافة مسافة تفصل بين الفقرات والعنوان من خلال ضبط الحاشية الخاصية بعناصر الخط الزمني */
 section.licence ul.timeline {
   padding-right: 0;
   padding-top: 45px;
   position: relative;
 }
+
 /* إضافة الخط الزمني الأزرق المتجه للأسفل */
 section.licence ul.timeline:before {
   content: "";
@@ -219,6 +253,7 @@ section.licence ul.timeline:before {
   margin-right: -1px;
   background: #196dd1;
 }
+
 /* إضافة الدوائر الزرقاء التي تظهر منتصف الخط الزمني */
 section.licence ul.timeline li {
   position: relative;
@@ -235,17 +270,20 @@ section.licence ul.timeline li:before {
   right: 50%;
   margin-right: -5px;
 }
+
 /* تغير موضع الفقرات ذات الترتيب الزوجي لتظهر على طرف اليسار */
 section.licence ul.timeline li:nth-of-type(even) {
   direction: rtl;
-  text-align:left;
+  text-align: left;
 }
+
 /* إزاحة التاريخ الزمني إلى اليسار */
 section.licence ul.timeline li:nth-of-type(even) .time-box h4 span {
   margin-left: 0;
   margin-right: 25px;
   float: left;
 }
+
 /* تغيير موضع السهم الذي يظهر على يمين الفقرات ليظهر على يسار الفقرات */
 section.licence ul.timeline li:nth-of-type(even) .time-box:after {
   left: auto;
@@ -254,35 +292,43 @@ section.licence ul.timeline li:nth-of-type(even) .time-box:after {
   border-top: 2px solid #f4f3f3;
   border-right: 2px solid #f4f3f3;
 }
+
 /* إزاحة الفقرات إلى الأعلى 50 بكسل */
 section.licence ul.timeline li:not(:first-of-type) {
   margin-top: -50px;
 }
+
 @media (max-width: 767px) {
   section.licence ul.timeline li .time-box {
-      max-width: 100%;
+    max-width: 100%;
   }
+
   section.licence ul.timeline li:not(:first-of-type) {
-      margin-top: 20px;
+    margin-top: 20px;
   }
+
   section.licence ul.timeline li .time-box:after {
-      display: none;
+    display: none;
   }
+
   section.licence ul.timeline:before {
-      height: 90%;
+    height: 90%;
   }
 }
+
 section.statistics {
   background-image: url(../images/bg2.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 }
+
 /* إضافة طبقة زرقاء شفافة أمام الخلفية */
 section.statistics .overlay {
   background-color: rgba(5, 117, 230, 0.7);
-  padding: 100px 0; 
+  padding: 100px 0;
 }
+
 /* تنسيقات الخط المطبقة على الفقرة النصية في قسم المهارات */
 section.statistics .overlay .stat p {
   font-size: 24px;
@@ -291,44 +337,53 @@ section.statistics .overlay .stat p {
   margin-top: 30px;
   color: white;
 }
-section.statistics .overlay .stat .circle canvas{
+
+section.statistics .overlay .stat .circle canvas {
   background-color: #eef6ff;
   border-radius: 50%;
   padding: 8px;
 }
-section.statistics .overlay .stat .circle{
+
+section.statistics .overlay .stat .circle {
   position: relative;
 }
-section.statistics .overlay .stat .circle span{
+
+section.statistics .overlay .stat .circle span {
   font-size: 24px;
   font-weight: bold;
-  color:#0575e6 ;
+  color: #0575e6;
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(50%,-50%);
+  transform: translate(50%, -50%);
 }
+
 section.gallery {
   padding: 75px 0 90px;
 }
+
 /* ضبط الهامش ليفصل بين العنوان والفقرات في الأسفل */
 section.gallery .title {
   margin-bottom: 35px;
 }
+
 /* تنسيقات الخط المطبقة في العنوان */
 section.gallery .title h2 {
   font-size: 30px;
   line-height: 50px;
   color: #0575e6;
 }
+
 /* فصل الأيقونة عن العنوان ضمن سطر خاص بها */
 section.gallery .title h2 i {
   display: block;
 }
+
 /* إخفاء عناصر الدخل في هذا القسم */
 section.gallery .work-gallery input {
   display: none;
 }
+
 /* التنسيقات الخاصة بالتصنيفات الموجودة بالقسم */
 section.gallery .work-gallery label {
   font-size: 18px;
@@ -342,50 +397,58 @@ section.gallery .work-gallery label {
   border-radius: 2px;
   transition: all 0.5s ease;
 }
+
 /* التنسيقات الخاصة بالتصنيفات عند مرور مؤشر الفأرة فوقه */
 section.gallery .work-gallery label:hover {
   color: #ffffff;
   background-color: #0575e6;
   border: 2px solid #0575e6;
 }
+
 /* تغيير لون التصنيفات عند النقر عليها */
-section.gallery .work-gallery input.item-type-1:checked~label.label-type-1, 
-section.gallery .work-gallery input.item-type-2:checked~label.label-type-2, 
-section.gallery .work-gallery input.item-type-3:checked~label.label-type-3, 
+section.gallery .work-gallery input.item-type-1:checked~label.label-type-1,
+section.gallery .work-gallery input.item-type-2:checked~label.label-type-2,
+section.gallery .work-gallery input.item-type-3:checked~label.label-type-3,
 section.gallery .work-gallery input.item-type-all:checked~label.label-type-all {
-    color: #ffffff;
-    background-color: #0575e6;
-    border: 2px solid #0575e6;
+  color: #ffffff;
+  background-color: #0575e6;
+  border: 2px solid #0575e6;
 }
+
 /* تكبير الصور التابعة للتصنيف عند الضغط عليه */
-section.gallery .work-gallery input.item-type-1:checked~.items .item-type-1, 
-section.gallery .work-gallery input.item-type-2:checked~.items .item-type-2, 
+section.gallery .work-gallery input.item-type-1:checked~.items .item-type-1,
+section.gallery .work-gallery input.item-type-2:checked~.items .item-type-2,
 section.gallery .work-gallery input.item-type-3:checked~.items .item-type-3 {
-    transform: scale(1.08);
-    opacity: 1;
+  transform: scale(1.08);
+  opacity: 1;
 }
+
 /* تصغير باقي صور التصنيفات وظهورها بشفافية */
-section.gallery .work-gallery input.item-type-1:checked~.items .item:not(.item-type-1), 
-section.gallery .work-gallery input.item-type-2:checked~.items>.item:not(.item-type-2), 
+section.gallery .work-gallery input.item-type-1:checked~.items .item:not(.item-type-1),
+section.gallery .work-gallery input.item-type-2:checked~.items>.item:not(.item-type-2),
 section.gallery .work-gallery input.item-type-3:checked~.items>.item:not(.item-type-3) {
-    transform: scale(0.8);
-    opacity: 0.5;
+  transform: scale(0.8);
+  opacity: 0.5;
 }
+
 /* جعل التنسيقات على مجموعة الصور تظهر ببطء */
 section.gallery .work-gallery .items .item {
-    transition: all 0.6s ease;
-    margin-bottom: 25px;
+  transition: all 0.6s ease;
+  margin-bottom: 25px;
 }
+
 section.contacts {
   background-image: url(../images/bg3.jpg);
   background-position: center center;
   background-size: cover;
 }
+
 /* تنسيقات الطبقة السوداء التي تغطي خلفية القسم */
 section.contacts .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   padding-top: 100px;
 }
+
 /* التنسيقات الخاصة بخط العنوان وضبط الهامش الخاص به */
 section.contacts .overlay .testimonials .title h3 {
   font-size: 30px;
@@ -393,16 +456,19 @@ section.contacts .overlay .testimonials .title h3 {
   margin-bottom: 27px;
   line-height: 50px;
 }
+
 /* تنسيق عارض الشرائح ليكون بحجم 65% من حجم الصفحة والهامش من الاسفل */
 section.contacts .overlay .testimonials .slider {
   width: 65%;
   margin: 0px auto 80px;
 }
+
 /* تحديد عرض ولون الخط دخل عارض الشرائح */
 section.contacts .overlay .testimonials .slider .carousel {
   min-height: 250px !important;
   color: #b1b1b1;
 }
+
 /* ضبط الحواشي الخاصة بعارض الشرائح وتحديد لون الخلفية داخله */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
   background-color: #ffffff;
@@ -411,10 +477,12 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-item .carous
   right: 0;
   left: 0;
 }
+
 /* تحديد ارتفاع عارض الشرائح */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item {
   min-height: 350px;
 }
+
 /* تحريك الصورة إلى أعلى عارض الشرائح */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption img {
   position: absolute;
@@ -422,17 +490,20 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-item .carous
   right: 50%;
   transform: translate(50%, -50%);
 }
+
 /* التنسيقات المطبقة على الخط في العنوان */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption h3 {
   font-size: 18px;
   color: #555555;
   margin-bottom: 15px;
 }
+
 /* تنسيقات فقرة المسمى الوظيفي ضمن العنوان */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption h3 span {
   font-size: 15px;
   color: #9c9c9c;
 }
+
 /* التنسيقات المطبقة على الفقرة النصية في الأسفل وضبط الهامش الخاص بها */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption p {
   font-size: 15px;
@@ -440,39 +511,47 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-item .carous
   color: #b1b1b1;
   margin-bottom: 25px;
 }
+
 /* التنسيقات المطبقة على وسم الرابط التشعبي الذي يحتوي على أيقونات التواصل الإجتماعي */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li a {
   font-size: 24px;
   color: #b2d8fe;
 }
+
 /* إزالة الحاشية التي يتم إضافتها على القوائم تلقائيًا */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul {
   padding-right: 0;
 }
+
 /* تحديد المسافة بين القوائم من خلال ضبط الهامش */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption ul li {
   margin-right: 5px;
 }
+
 section.contacts .overlay .testimonials .slider .carousel .carousel-indicators li {
   max-width: 15px;
   height: 15px;
   border: 1px solid #0575e6;
   background-color: #ffffff;
 }
+
 /* تغيير لون نقطة التنقل الفعالة */
 section.contacts .overlay .testimonials .slider .carousel .carousel-indicators li.active {
   background-color: #0575e6;
 }
+
 /* ضبط الحواشي والهامش لعارض الشرائح */
 section.contacts .overlay .testimonials .slider .carousel .carousel-indicators {
   padding-right: 0;
   margin: 0;
   bottom: 12px;
 }
+
 /* إلغاء الحواشي المضافة إلى النقاط وتحريكها للأسفل */
 section.contacts .overlay .testimonials .slider .carousel .carousel-item {
   min-height: 350px;
 }
+
 /* إضافة أسهم التنقل وتعيين موضعها في وسط عارض الشرائح */
 section.contacts .overlay .testimonials .slider .carousel .carousel-control-next,
 section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
@@ -480,8 +559,10 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev
   bottom: auto;
   width: auto;
   transform: translate(50%, -50%);
-  z-index: 10; /* bootstrap حتى يتناسب مع النسخة الاحدث من */
+  z-index: 10;
+  /* bootstrap حتى يتناسب مع النسخة الاحدث من */
 }
+
 /* التنسيقات المطبقة على أسهم التنقل */
 section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i,
 section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i {
@@ -489,18 +570,22 @@ section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev
   background: #0575e6;
   border-radius: 50%;
 }
+
 /* إلى منتصف عارض الشرائح prev إزاحة سهم */
 section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
   transform: translate(-50%, -50%);
 }
-section.contacts{
+
+section.contacts {
   text-align: right;
 }
+
 /* ضبط الحاشية العلوية وتعيين لون الخلفية */
 section.contacts .overlay .contact-info {
   background-color: #ffffff;
   padding: 50px;
 }
+
 /* التنسيقات المطبقة على الخط في العنوان */
 section.contacts .overlay .contact-info .title h3 {
   font-size: 30px;
@@ -508,8 +593,9 @@ section.contacts .overlay .contact-info .title h3 {
   margin-bottom: 35px;
   line-height: 50px;
 }
+
 /* التنسيقات المطبقة على حقول الإدخال في نموذج الإرسال */
-section.contacts .overlay .contact-info .form form .form-group input, 
+section.contacts .overlay .contact-info .form form .form-group input,
 section.contacts .overlay .contact-info .form form .form-group textarea {
   border: 2px solid #f1f1f1;
   border-radius: 3px;
@@ -519,33 +605,40 @@ section.contacts .overlay .contact-info .form form .form-group textarea {
   line-height: 35px;
   padding-right: 45px;
 }
+
 /* تحديد ارتفاع حقل إدخال الرسائل */
 section.contacts .overlay .contact-info .form form .form-group textarea {
   min-height: 220px;
   max-height: 220px;
 }
+
 /* التنسيقات المطبقة على الأيقونات الموجودة في حقول الإدخال */
 section.contacts .overlay .contact-info .form form .form-group {
   position: relative;
 }
+
 section.contacts .overlay .contact-info .form form .form-group:before {
   font-family: FontAwesome;
   position: absolute;
-  top: 8px;/* bootsrap حتى يتناسب مع النسخة الحديثة من */
+  top: 8px;
+  /* bootsrap حتى يتناسب مع النسخة الحديثة من */
   right: 30px;
   font-size: 18px;
   line-height: 25px;
   color: #0575e6;
   display: inline-block;
 }
+
 /* إضافة أيقونة المستخدم في الحقل الأول */
 section.contacts .overlay .contact-info .form form .form-group:first-of-type:before {
   content: "\f007";
 }
+
 /* إضافة أيقونة ظرف الرسالة في الحقل الثاني */
 section.contacts .overlay .contact-info .form form .form-group:nth-of-type(2):before {
   content: "\f0e0";
 }
+
 /* التنسيقات المطبقة على زر الإرسال */
 section.contacts .overlay .contact-info .form form button {
   font-family: ar-font;
@@ -556,22 +649,28 @@ section.contacts .overlay .contact-info .form form button {
   padding: 10px 70px;
   border: 2px solid #0575e6;
   border-radius: 3px;
-  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
 }
+
 section.contacts .overlay .contact-info ul.contact-us li {
   font-family: 'Open Sans';
   font-size: 16px;
   line-height: 30px;
   color: #0575e6;
 }
+
 /* إلغاء الحاشية التي يتم افتراضها على القوائم */
 section.contacts .overlay .contact-info ul {
   padding: 0;
+  text-align: center;
 }
+
 /* ضبط الهامش عن يمين أيقونات التواصل الاجتماعي */
 section.contacts .overlay .contact-info ul.social li {
   margin-right: 9px;
 }
+
 /* التنسيقات المطبقة على أيقونات التواصل الاجتماعي */
 section.contacts .overlay .contact-info ul.social li a i {
   background-color: #9bc8f5;
@@ -583,10 +682,12 @@ section.contacts .overlay .contact-info ul.social li a i {
   line-height: 50px;
   transition: all 0.3s ease;
 }
+
 /* تغيير لون أيقونات التواصل الإجتماعي عند مرور مؤشر الفأرة فوقه */
 section.contacts .overlay .contact-info ul.social li a i:hover {
   background-color: #0575e6;
 }
+
 /* التنسيقات المطبقة على الفقرة النصية أسفل الصفحة */
 section.contacts .overlay .copyright p {
   font-size: 18px;
@@ -594,38 +695,77 @@ section.contacts .overlay .copyright p {
   line-height: 77px;
   margin: 0px;
 }
+
 section.contacts form .error {
   color: red;
 }
+
 /* تعديل التنسيقات المطبقة على بعض العناصر لتلائم الشاشات الأصغر من 990 بكسل */
 @media (max-width: 990px) {
   nav.navbar ul.navbar-nav li a.nav-link {
-      padding-right: 0.75rem;
-      padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
+
   section.contacts .overlay .testimonials .slider .carousel .carousel-item {
-      min-height: 390px;
+    min-height: 390px;
   }
+
   section.contacts .overlay .contact-info ul.social li a i {
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
   }
-  section.contacts .overlay .contact-info .form form .form-group input, section.contacts .overlay .contact-info .form form .form-group textarea {
-      font-size: 14px;
+
+  section.contacts .overlay .contact-info .form form .form-group input,
+  section.contacts .overlay .contact-info .form form .form-group textarea {
+    font-size: 14px;
   }
 }
+
 /* يمكنك اضافة هذا الجزء بالإضافة إلى الشيفرة المشروحه فى الدروس السابقة  */
-@media (max-width: 990px) and (min-width: 768px){
+@media (max-width: 990px) and (min-width: 768px) {
   section.contacts .overlay .contact-info ul.contact-us li {
-       overflow-wrap: break-word;
-       display: flex;
-       flex-direction: column;
-       text-align: center;
-       align-items: center;
-   }
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  nav.navbar ul.navbar-nav li a.nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 14px;
+  }
 }
-@media (max-width: 450px) and (min-width: 283px){
+
+@media (max-width: 767px) {
+  section.contacts .overlay .contact-info .form form button {
+
+    font-size: 20px;
+    padding: 6px 25px;
+  }
+
+  section.gallery .work-gallery label {
+    margin: 0px 8px 40px;
+    padding: 7px 7px;
+  }
+
+  nav.navbar ul.navbar-nav li a.nav-link {
+
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+    padding: 13px;
+  }
+
+}
+
+@media (max-width: 576px) {}
+
+
+@media (max-width: 450px) and (min-width: 283px) {
   header .MainCard img {
     width: 215px;
     height: 240px;
@@ -637,57 +777,67 @@ section.contacts form .error {
     line-height: 40px;
     margin-bottom: 25px;
   }
+
   header .MainCard h1 span {
     font-size: 17px;
   }
+
   header .MainCard p {
     font-size: 12px;
     line-height: 25px;
     margin-bottom: 30px;
-  
+
   }
-  header .MainCard > a {
+
+  header .MainCard>a {
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 40px;
   }
+
   section.licence .title h2 {
     font-size: 25px;
     line-height: 45px;
-    
+
   }
+
   section.licence ul.timeline li .time-box p {
     font-size: 12px;
     line-height: 20px;
     text-align: justify;
- }
-section.licence ul.timeline li .time-box h4 {
-  font-size: 13px;
-  line-height: 30px;
+  }
 
- }
- section.licence ul.timeline li:nth-of-type(even) {
-  direction: ltr;
-  
+  section.licence ul.timeline li .time-box h4 {
+    font-size: 13px;
+    line-height: 30px;
+
   }
-  
-section.licence ul.timeline li .time-box h4 span {
-  margin-left: 0px;
-  margin-right: 13px;
-  padding: 0px 5px;
-}
-section.statistics .overlay .stat p {
-  font-size: 20px;
-  line-height: 20px;
-  margin-top: 25px;
-  
+
+  section.licence ul.timeline li:nth-of-type(even) {
+    direction: ltr;
+
   }
+
+  section.licence ul.timeline li .time-box h4 span {
+    margin-left: 0px;
+    margin-right: 13px;
+    padding: 0px 5px;
+  }
+
+  section.statistics .overlay .stat p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+
+  }
+
   section.statistics .overlay .stat .circle span {
     font-size: 20px;
     top: 47%;
     right: 49%;
-    
+
   }
+
   section.gallery .work-gallery label {
     font-size: 10px;
     line-height: 15px;
@@ -696,18 +846,21 @@ section.statistics .overlay .stat p {
     margin-left: 1px;
     margin-right: 0px
   }
+
   section.gallery .title h2 {
     font-size: 25px;
     line-height: 40px;
-    
+
   }
+
   section.contacts .overlay {
-   
+
     padding-top: 60px;
   }
+
   section.contacts .overlay .testimonials .slider {
     width: 100%;
-    
+
   }
 
   section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
@@ -716,40 +869,49 @@ section.statistics .overlay .stat p {
     right: 0;
     left: 0;
   }
+
   section.contacts .overlay .testimonials .slider .carousel .carousel-indicators {
     bottom: 0px;
   }
+
   section.contacts .overlay .testimonials .slider .carousel .carousel-item {
     min-height: 450px;
   }
-  section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i, section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i {
+
+  section.contacts .overlay .testimonials .slider .carousel .carousel-control-next i,
+  section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev i {
     padding: 5px 15px;
   }
-  section.contacts .overlay .testimonials .slider .carousel .carousel-control-next, section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
+
+  section.contacts .overlay .testimonials .slider .carousel .carousel-control-next,
+  section.contacts .overlay .testimonials .slider .carousel .carousel-control-prev {
     top: 55%;
   }
+
   section.contacts .overlay .contact-info .form form button {
-   
+
     font-size: 20px;
     line-height: 20px;
     padding: 10px 25px;
     margin-right: 0px;
     margin-left: 60px;
   }
+
   section.contacts .overlay .contact-info ul.contact-us li {
     font-size: 15px;
-  
+
   }
+
   nav.navbar ul.navbar-nav li a.nav-link {
-   
+
     font-size: 13px;
     line-height: 18px;
   }
 }
 
 
-@media (max-width: 284px){
-section.gallery .work-gallery label {
+@media (max-width:320px) {
+  section.gallery .work-gallery label {
     font-size: 7px;
     line-height: 13px;
     margin: 0px 0px 15px;
@@ -757,26 +919,32 @@ section.gallery .work-gallery label {
     margin-left: 0px;
     margin-right: 3px;
   }
-section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
+
+  section.contacts .overlay .testimonials .slider .carousel .carousel-item .carousel-caption {
     padding: 56px 35px 35px;
-   
+
   }
+
   section.contacts .overlay .contact-info .form form button {
 
     margin-left: 40px;
   }
+
   section.contacts .overlay .contact-info ul.social li a i {
     width: 39px;
-    
+
   }
+
   header .MainCard {
-  
+
     transform: translateY(29%);
   }
+
   .container {
-   
+
     margin-bottom: 25px;
   }
+
   section.contacts .overlay .testimonials .slider .carousel .carousel-item {
     min-height: 460px;
   }
