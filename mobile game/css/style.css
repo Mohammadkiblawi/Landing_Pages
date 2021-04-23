@@ -192,7 +192,9 @@ footer .contact .overlay .mail {
     color: #fad32f;
 }
 
-@media(max-width:575px) {
+@media(max-width:767px) {
+
+    header .send-notification .input-group,
     footer .input-group {
         width: 90%;
         margin: 0 auto;
