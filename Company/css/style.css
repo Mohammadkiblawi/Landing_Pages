@@ -299,6 +299,11 @@ section.gallery .work-gallery a .hover {
   transition: all .5s ease;
 }
 
+.work-gallery .col-md>.col-sm>a img {
+
+  margin-bottom: 25px;
+}
+
 /* تنسيق الفقرة النصية داخل البطاقات وجعلها غير مرئية */
 section.services .card .card-block p {
   font-size: 15px;
@@ -756,6 +761,7 @@ footer .copyright p {
     right: 2%;
   }
 
+
   header .overlay .slider .carousel-control-prev,
   header .overlay .slider .carousel-control-next {
     display: none;
@@ -767,6 +773,8 @@ footer .copyright p {
 
   .work-gallery .col-md>.col-sm>a img {
     width: 100%;
+
+    margin-bottom: 35px;
   }
 
   section.gallery .work-gallery .overlay-gallery img {
