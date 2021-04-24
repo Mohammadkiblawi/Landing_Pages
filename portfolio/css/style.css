@@ -760,6 +760,9 @@ section.contacts form .error {
     padding: 13px;
   }
 
+  .fa-bars {
+    color: blue;
+  }
 }
 
 @media (max-width: 576px) {}
