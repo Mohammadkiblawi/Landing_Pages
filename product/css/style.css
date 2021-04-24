@@ -567,6 +567,23 @@ footer .copyright p {
     }
 }
 
+@media (max-width: 767px) {
+
+    section.features .feature .media .media-body p {
+        font-size: 17px;
+
+    }
+
+    section.features .feature .media .media-body h5 {
+        padding: 3px 20px;
+        font-size: 24px;
+
+
+    }
+
+
+}
+
 @media (max-width: 575px) {
     header {
         overflow-x: hidden;
