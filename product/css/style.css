@@ -619,4 +619,10 @@ footer .copyright p {
         position: relative;
         right: -140px;
     }
+    section.features .feature .media img {
+        margin: 0px 0rem;
+    }
+     header.header .overlay .header-text .buttons button:first-of-type {
+        margin-left: 0;
+    }
 }
